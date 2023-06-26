@@ -1,0 +1,123 @@
+:root {
+  --color-primary: #0f172a;
+  --color-accent: #646cff;
+  --color-text: #ffffff;
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-size: 1rem;
+  --font-size-sm: 0.875rem;
+
+  --space-0: 0;
+  --space-1: 0.125rem;
+  --space-2: 0.25rem;
+  --space-3: 0.5rem;
+  --space-4: 0.75rem;
+  --space-5: 1rem;
+  --space-6: 1.25rem;
+  --space-7: 2rem;
+
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: stretch;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+small {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+input, select, textarea {
+  font-size: 14px;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: var(--space-2) var(--space-3);
+  font-size: smaller;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: color-mix(in srgb, var(--color-primary) 100%, #ffffff);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  vertical-align: baseline;
+}
+
+button:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 40%, #000);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:has(svg) {
+  padding: var(--space-3);
+  display: flex;
+}
+
+h3 {
+  margin-bottom: var(--space-6);
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid: auto-flow / 280px 2fr;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.divider {
+  height: 1px;
+  margin: var(--space-4) calc(-1 * var(--space-6));
+  background: color-mix(in srgb, var(--color-primary) 85%, #ffffff);
+}
+
+.divider.divider-l {
+  margin: var(--space-6) calc(-1 * var(--space-7));
+}
+
+.divider.divider-hidden {
+  background: transparent;
+}
