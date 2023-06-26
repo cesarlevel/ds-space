@@ -1,5 +1,5 @@
 # ds-space
 
-DS Sapce is a small experiment to validate spaces in a design system.
+DS Space is a small experiment to validate spaces in a design system.
 
 https://cesarlevel.github.io/ds-space/
